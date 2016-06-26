@@ -1,109 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="utf-8"
     <title>Connie's Journal</title>
+    <link rel="stylesheet" href="screen.css"/>
 
-    <style>
-
- body {
-      padding-left: 50px;
-      font-family: Arial , Georgia, 'Times New Roman', Times, serif;
-    }
-/* lace banner */
-#banner{ 
-position: fixed; 
-width: 100%; 
-opacity: 0.5; 
-height: 30px; 
-background-color: #fff; 
-z-index: 2; 
-margin-top: 0px; 
-}
-
-#banner2 { 
-background-image:url("http://i281.photobucket.com/albums/kk203/hiv0lt4g3/Pinky%20Sugar/lace/014.gif"); 
-background-repeat:repeat-x; 
-left:0px; 
-width:100%; 
-margin-top: 0px; 
-height:30px; 
-position: fixed; 
-z-index: 2; 
-opacity:.8;
-}
-/* lace banner */
-
-h1 {text-align:center;
-    font-size: 2.2em;
-    z-index: 1;
-}
-
-h3 {text-align: left;
-    font-size: 1.25em;
-    color:#6E7B8B;
-}
-
-p{
-  text-align: center;
-}
-
-.dogs {
-        position: absolute;
-        opacity: 100%;}
-
-#box
-{
-    top: 40px;
-    width:100vw;
-    height:20vh;
-    z-index: -1;
-}
-
-#dog1
-{
-  background-image: url(http://oniongames.jp/onion_wp/wp-content/uploads/2014/03/cow_blog.gif);
-  left: 8px;
-  top:20%;
-  width: 200px;
-  height: 150px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#dog2
-{
-  background-image: url(http://static.tumblr.com/3e8f391f294af1e612e58fef1492cfa6/y65vcpz/ahgn192mp/tumblr_static_tumblr_inline_mqbi1h9k9l1qz4rgp.gif);
-  top:20%;
-  right: 1px;
-  width: 200px;
-  height: 150px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-    </style>
   </head>
   <body>
 
+      
+<!-- the lace banner (one pattern on top of 50% opaque banner) -->      
 <div id="banner"></div> 
-<div id="banner2"></div> 
+<div id="banner2"></div>
+<!-- the lace banner -->
 
+
+<!-- box at top to hold the cow and dog -->      
 <div id="box">
-        <div id='dog1' class='dogs'></div>
-        <div id='dog2' class= 'dogs'></div>
-</div>
-         <h1>Connie's Github Journal!</h1>
+        <div id="dog1" class="animal"></div>
+        <div id="cow2" class= "animal"></div>
+</div>     
+<!-- box at top to hold the cow and dog -->    
+      
+<!-- journal heading, navigation -->      
+    <h1>Connie's Github Journal</h1>
+
+    <br><br><br>
+    <p> Welcome!  :) </p>
+    <br>
+    <hr>
+    <br>  
+    <nav>
+        <i>Navigation Links:</i>
+    <ol>
+        <li><a href="#proj_1">Project One: Person card </a></li>    
+        <li><a href="#cooldigital"> Cool digital item that inspires me! </a></li>    
         
-   
+    </ol>    
+        
+    </nav>  
+      
+      
+<!-- journal heading, navigation --> 
+      
+<!-- PROJECT ONE -->
 
-   <br><br><br><p> Welcome to my journal!  :) </p>
+    <hr><br><br>
+    <h2 id ="proj_1"> Project one: PERSON CARD <a href="http://codepen.io/connieye/pen/VjKgEm/"> (wip CODEPEN link) </a> </h2>
 
-   <br><br>
-    <h2> Project one: PERSON CARD </h2>
-    <h2><a href="http://codepen.io/connieye/pen/VjKgEm/"> LINK TO CURRENT CODE ON CODEPEN! </a> </h2>
-
-    <h3> Project one: Mock ups! </h3>
-    <ul>
+    <h3> Mock ups! </h3>
+    <ol>
     <br><br>
     <li> Mock up one: On hover, thought clouds with her favorite things show up. On click, it will play a gif of her crawling out of the box and striking a <i>very</i> cool pose.
     <br><br>
@@ -111,13 +57,13 @@ p{
     <li> Mock up two: On hover, thought clouds with her favoite things fly (or fade?) in and bounce around in place a bit. On click, the box turns into a window with her waving at you. <b>We chose the cloud idea for the hover!</b>
     <br><br>
     <img src = "https://github.com/khanniie/khanniie.github.io/blob/master/mocktw.jpg?raw=true" width="750" height="1000" alt="Mock Two"></li>
-    <li> Mock up three: On hover, her favorite things flood the box. On click, a pokemon trainer card for her pops up! <b>She liked the idea of the click, so I am doing the pokemon card popup. </li> </b>
+    <li> Mock up three: On hover, her favorite things flood the box. On click, a pokemon trainer card for her pops up! <b>She liked the idea of the click, so I am doing the pokemon card popup. </b>
     <br><br>
     <img src="https://github.com/khanniie/khanniie.github.io/blob/master/mockthree.jpg?raw=true" width="750" height="1000" alt="Mock Three">
     </li>
-    </ul>
+    </ol>
     <br><br>
-    <h3> Project one: Rough Drafts for the Clouds </h3>
+    <h3> Rough Drafts for the Clouds </h3>
         <i> clouds should appear on hover. Anushri likes Suho, cats (hers is named Collar), and korean food! The clouds will be refined to look prettier later hopefully. </i>
     <br><br>
     <ul>
@@ -127,7 +73,15 @@ p{
 
     </ul>
 
-<script>
-</script>
+    <!-- ONE COOL THING HOMEWORK -->  
+      
+    <h2 id="cooldigital">Assignment: Cool Digital Item that inspires me <br>
+    Graphing Caluculator Applications  
+    </h2>
+      
+    <p> The TI-84 (Color and non-color) Graphing calucators, by Texas instruments are highly popular for high school math classes. But beyond being able to perform complex math functions, they come with a program function, allowing the user to program their own calculator programs. They allow variables, "for" or "while" loops, a recall picture function. <br>
+    With this technology availible, many people have created amazing programs, from hangman to a replication of the entire Pokemon FireRed game. I am not too sure how the relication worked, but it appears that it does work due to the similairites between the gameboy machine and the TI-84 calcuators. 
+    </p>
+      
   </body>
 </html>
