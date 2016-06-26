@@ -50,6 +50,14 @@ p{
   padding-left: 90px;
 }
 
+ol{
+    padding-left: 90px;
+}
+
+ul{
+    padding-left: 90px;
+}
+
 .animal {
         position: absolute;
         opacity: 100%;}
