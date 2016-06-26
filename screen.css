@@ -4,15 +4,6 @@ body {
       background-color: #ecf2f9;
     }
 /* lace banner */
-#banner{ 
-position: relative; 
-width: 100%; 
-opacity: 0.5; 
-height: 30px; 
-background-color: #fff; 
-z-index: 2; 
-margin-top: 0px; 
-}
 
 #banner2 { 
 background-image:url("http://i281.photobucket.com/albums/kk203/hiv0lt4g3/Pinky%20Sugar/lace/014.gif"); 
@@ -30,7 +21,9 @@ opacity:.8;
 h1 {text-align:center;
     font-size: 2.2em;
     z-index: 1;
-    padding-left: 50px;
+    position: absolute;
+    left:50%;
+    top: 115%;
 }
 h2{
     text-decoration: underline;
