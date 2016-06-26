@@ -40,8 +40,12 @@ h3 {
     color:#6E7B8B;
 }
 
+h5 {
+    text-align: center;
+}
+
 p{
-  text-align: center;
+  font-size: .85em;
 }
 
 .animal {
