@@ -4,7 +4,7 @@ body {
     }
 /* lace banner */
 #banner{ 
-position: fixed; 
+position: relative; 
 width: 100%; 
 opacity: 0.5; 
 height: 30px; 
