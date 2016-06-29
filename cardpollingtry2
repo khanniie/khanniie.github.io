@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    #container {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+    }
+    
+    #cloud {
+        width: 20px;
+        height: 20px;
+        background-color: pink;
+        opacity: 0;
+    }
+    
+    #container.hover #cloud {
+        opacity: 1;
+    }
+    
+    #container.clicked #cloud {
+        opacity: 0;
+    }
+    
+    #container.clicked {
+        transform: translateX(100px);
+    }
+    </style>
+</head>
+
+<body>
+    <div id='container'>
+        <div id='cloud'></div>
+    </div>
+    <script>
+    // A dictionary for holding the mouse position in a globally available variable
+    var mousePosition = {
+        x: null,
+        y: null
+    };
+    // Whenever the mouse moves in the document, update our dictionary
+    document.addEventListener('mousemove', function(e) {
+        mousePosition.x = e.x;
+        mousePosition.y = e.y;
+    });
+    // Grab our container and cloud
+    var container = document.querySelector('#container');
+    var cloud = document.querySelector('#cloud');
+    // Toggle the clicked class whenever we click (triggering the translation)
+    container.addEventListener('click', function() {
+        container.classList.toggle('clicked');
+    });
+    // A function to test whether a point is within an element
+    var isOverlapping = function(element, point) {
+        var region = element.getBoundingClientRect(); // Grab the bounding box of the element; you can read more at https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+        // Check if the x and y values of point are within the region
+        var xWithin = (point.x < region.right && point.x > region.left);
+        var yWithin = (point.y > region.top && point.y < region.bottom);
+        // If they are, our point is in the element, otherwise it isn't
+        if (xWithin && yWithin) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+    // Every 100ms, check if the mouse is within the element; if it is, toggle the hover class
+    setInterval(function() {
+        if (isOverlapping(container, mousePosition)) {
+            container.classList.add('hover');
+        } else if (container.classList.contains('hover')) {
+            container.classList.remove('hover');
+        }
+    }, 100);
+    </script>
+</body>
+
+</html>
