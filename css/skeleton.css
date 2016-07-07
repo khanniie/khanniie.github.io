@@ -139,6 +139,8 @@ h1 { font-size: 5.0rem;
     line-height: 1.2;  
     letter-spacing: -.1rem;
     font-family: "Sacramento", "Raleway", "sans-serif" ;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
 }
 
 
@@ -392,6 +394,10 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+img{
+    max-width: 75%;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -434,15 +440,47 @@ there.
 
 /*additional styling by connie*/
 
-.dog
+
+
+.backgroundPic
 {
-    background-image: url(http://diycandy.com/wp-content/uploads/2015/09/Flower-Basket-Costume-01.jpg);
-    opacity: .5;
+    background-image: url(https://github.com/khanniie/khanniie.github.io/blob/master/images/conniesfai.jpg?raw=true);
+    position: absolute;
+    opacity: 0.25;
+    left:0%;
+    top:0%;
+    width:300%;
+    height: 600%;
+    margin-top: -50%;
+    margin-left: -50%;
+    background-size: contain;
+    z-index: -1;
+    
     
 }
 
 .bold
 {
+    position: relative;
     opacity: 1;
     z-index: 2;
+    padding: 10%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    border: 10px dotted lightgrey;
+    border-radius: 20px;
+    
+}
+
+.borderOff{
+    border: none;
+}
+
+.smallerHeading{
+    font-size: 1.4rem;
+    
+}
+
+.pointsOff{
+    list-style: none;
 }
