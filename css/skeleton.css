@@ -135,15 +135,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
   font-weight: 300; }
 
-h1 { font-size: 4.0rem;
+h1 { font-size: 5.0rem;
     line-height: 1.2;  
     letter-spacing: -.1rem;
     font-family: "Sacramento", "Raleway", "sans-serif" ;
 }
 
 
-h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
-h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; 
+font-family: Quicksand, raleway, sans-serif;
+}
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;
+font-family: Quicksand, raleway, sans-serif;
+}
 h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
@@ -425,3 +429,20 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+/*additional styling by connie*/
+
+.dog
+{
+    background-image: url(http://diycandy.com/wp-content/uploads/2015/09/Flower-Basket-Costume-01.jpg);
+    opacity: .5;
+    
+}
+
+.bold
+{
+    opacity: 1;
+    z-index: 2;
+}
