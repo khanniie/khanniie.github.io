@@ -14,9 +14,8 @@
             top: 35%;
             z-index: -1;
         }
-        
-        
         /*        A transparent "cover" that is the exact dimension of the canvas. Gets rid of the problem where the "follower" is between the cursor and eventlistner canvas*/
+        
         #canvasCover {
             height: 500px;
             width: 500px;
@@ -26,8 +25,8 @@
             cursor: none;
             z-index: 5;
         }
-        
         /*     the apply button - has an eventlistner attached, when clicked, it updates color and width   */
+        
         #go {
             padding: 0.5rem;
             margin: 0.5rem;
@@ -39,8 +38,21 @@
             text-align: center;
             font-variant: small-caps;
         }
+        /* button to clear current canvas */
         
+        #clear {
+            padding: 0.5rem;
+            margin: 0.5rem;
+            border: 2px solid grey;
+            background-color: azure;
+            height: 2rem;
+            width: 7rem;
+            box-shadow: 2px 2px grey;
+            text-align: center;
+            font-variant: small-caps;
+        }
         /* extra stuff added for follower, the dot that represents the pen on the canvas */
+        
         #follower {
             display: none;
             width: 3px;
@@ -55,8 +67,8 @@
             top: 40%;
             z-index: -1;
         }
-        
         /* is added through javascript when the cursor reaches the canvas. follower is invisible until then.*/
+        
         #follower.on {
             display: block;
         }
@@ -90,7 +102,12 @@
 
 
     <!--apply button that has an eventlistener that updates color and width when clicked   -->
-    <div id="go">Apply! :) </div>
+    <div id="go">APPLY! :) </div>
+
+
+    <!--    button that clears canvas-->
+    <div id="clear">NEW CANVAS (CLEARS OLD ONE) </div>
+
 
 
     <!--original code start/ the canvas-->
@@ -100,8 +117,7 @@
 
 
     <script>
-        
-        //gets the follower, which need to change its background color and size according to line color and width
+        //gets the follower, which needs to change its background color and size according to line color and width
         var follower = document.querySelector('#follower');
 
         //code belows allows for the changing of line color and width          
@@ -111,7 +127,7 @@
         var lineWid = 2;
         var formm = document.getElementById("help");
         goButton.addEventListener('click', function () {
-            console.log("i have been clicked!");
+            console.log("go has been clicked!");
             lineCol = formm.colorhex.value;
             lineWid = formm.lineWid.value;
 
@@ -126,6 +142,21 @@
 
         });
         //**********END
+
+
+        //        code to clear canvas
+
+
+        var canvas2 = document.querySelector('#myCanvas'); 
+        var ctx2 = canvas2.getContext('2d');
+        
+        var clearButton = document.getElementById("clear");
+
+        clearButton.addEventListener('click', function () {
+        console.log("clear has been clicked!");
+
+        ctx.clearRect(0, 0, 500, 500);
+        });
 
 
         // original code from alec, slightly modified. instead of canvas, the eventlistner is added to a "cover" on top of the canvas. 
@@ -144,7 +175,9 @@
 
 
         var line = function (x1, y1, x2, y2) { // A convenience function to draw a line between two points in our context
+
             ctx.beginPath(); // start a path
+            ctx.lineCap = "round";
             ctx.moveTo(x1, y1); // move our pen to x1, y1
             ctx.lineWidth = lineWid;
             ctx.lineTo(x2, y2); // draw a line from wherever our pen is to x2, y2
@@ -181,7 +214,7 @@
 
             //*****extra added for the follower
             follower.style.left = event.x - 5 + "px";
-            follower.style.top = event.y - 5 
+            follower.style.top = event.y - 5
 
         });
     </script>
