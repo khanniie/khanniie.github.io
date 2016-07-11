@@ -11,15 +11,77 @@
             height: 35vw;
             background-size: cover;
         }
-        
         #Ozzy2 {
+            left: 40vw;
+            top: 40vw;
+            background-image: url("Ozzy_one.png");
+            height: 35vw;
+            background-size: cover;
+        }
+        
+        #Ozzy3 {
             left: 5vw;
             top: 5vw;
             background-image: url("Ozzy_two.png");
             background-size: cover;
-            border: solid black;
             height: 40vw;
         }
+        
+        #Ozzy4 {
+            left: 15vw;
+            top: 15vw;
+            background-image: url("Ozzy_two.png");
+            background-size: cover;
+            height: 40vw;
+        }
+        
+          #Ozzy5 {
+            left: 10vw;
+            top: 10vw;
+            background-image: url("Ozzy_three.png");
+            background-size: cover;
+            height: 40vw;
+        }
+         #Ozzy6 {
+            left: 30vw;
+            top: 20vw;
+            background-image: url("Ozzy_three.png");
+            background-size: cover;
+            height: 40vw;
+        }
+        
+         #Ozzy7 {
+            left: 20vw;
+            top: 70vw;
+            background-image: url("Ozzy_four.png");
+            background-size: cover;
+            height: 40vw;
+        }
+        
+         #Ozzy8 {
+            left: 20vw;
+            top: 20vw;
+            background-image: url("Ozzy_four.png");
+            background-size: cover;
+            height: 40vw;
+        }
+        
+         #Ozzy9 {
+            left: 50vw;
+            top: 50vw;
+            background-image: url("Ozzy_five.png");
+            background-size: cover;
+            height: 60vw;
+        }
+        
+         #Ozzy10 {
+            left: 10vw;
+            top: 10vw;
+            background-image: url("Ozzy_five.png");
+            background-size: cover;
+            height: 60vw;
+        }
+        
         
         .dog {
             position: fixed;
@@ -33,7 +95,15 @@
 <body>
 
     <div id="Ozzy1" class="dog"> </div>
-     <div id="Ozzy2" class="dog"></div>
+    <div id="Ozzy2" class="dog"></div>
+    <div id="Ozzy8" class="dog"></div>
+    <div id="Ozzy10" class="dog"></div>
+    <div id="Ozzy5" class="dog"></div>
+    <div id="Ozzy6" class="dog"></div>
+    <div id="Ozzy7" class="dog"></div>
+    <div id="Ozzy3" class="dog"></div>
+    <div id="Ozzy9" class="dog"></div>
+    <div id="Ozzy4" class="dog"></div>
 
     <script>
         var isHover = function (dogg, x1, y1) {
@@ -57,21 +127,12 @@
 
         var dog = document.querySelector(".dog");
 
-        //        dog.addEventListener('mouseenter', function (event) {
-        //            isHover = true;
-        //
-        //        });
-        //
-        //        dog.addEventListener('mouseleave', function (event) {
-        //            isHover = false;
-        //
-        //        });
 
-        var Ozzy1 = document.getElementById("Ozzy1");
-
-        var Ozzy2 = document.getElementById("Ozzy1");
-
-
+//        var Ozzy1 = document.getElementById("Ozzy1");
+//
+//        var Ozzy2 = document.getElementById("Ozzy1");
+//
+//
 
         var dogMove = function (x1, y1, dogVar) {
 
@@ -126,7 +187,7 @@
 
         document.body.addEventListener('mousemove', function (event) {
             
-            for(var i=1; i<3; i++)
+            for(var i=1; i<11; i++)
             {
                 var dogString = "Ozzy" + i;
                 
