@@ -75,13 +75,13 @@
 
         var dogMove = function (x1, y1, dogVar) {
 
-            var leftPos = Ozzy1.getBoundingClientRect().left;
-            var topPos = Ozzy1.getBoundingClientRect().top;
+            var leftPos = dogVar.getBoundingClientRect().left;
+            var topPos = dogVar.getBoundingClientRect().top;
             console.log(leftPos + " " + topPos);
 
-            var dogWidth = Ozzy1.getBoundingClientRect().width;
+            var dogWidth = dogVar.getBoundingClientRect().width;
             console.log(dogWidth);
-            var dogHeight = Ozzy1.getBoundingClientRect().height;
+            var dogHeight = dogVar.getBoundingClientRect().height;
             console.log(dogHeight);
 
             if (isHover(dogVar, x1, y1)) {
@@ -90,31 +90,31 @@
 
 
                     if (y1 < topPos + dogHeight * .35) {
-                        Ozzy1.style.transform = "translate(15vw, 15vw)";
+                        dogVar.style.transform = "translate(15vw, 15vw)";
                     } else if (y1 < topPos + dogHeight * .65) {
-                        Ozzy1.style.transform = "translate(20vw, 0vw)";
+                        dogVar.style.transform = "translate(20vw, 0vw)";
                     } else {
-                        Ozzy1.style.transform = "translate(15vw, -15vw)";
+                        dogVar.style.transform = "translate(15vw, -15vw)";
                     }
                 } else if (x1 < (leftPos + dogWidth * .65)) {
 
 
                     if (y1 < topPos + dogHeight * .35) {
-                        Ozzy1.style.transform = "translate(0vw, 20vw)";
+                        dogVar.style.transform = "translate(0vw, 20vw)";
                     } else if (y1 < topPos + dogHeight * .65) {
-                        Ozzy1.style.transform = "translate(20vw, 0vw)";
+                        dogVar.style.transform = "translate(20vw, 0vw)";
                     } else {
-                        Ozzy1.style.transform = "translate(0vw, -20vw)";
+                        dogVar.style.transform = "translate(0vw, -20vw)";
                     }
                 } else {
 
 
                     if (y1 < topPos + dogHeight * .35) {
-                        Ozzy1.style.transform = "translate(-15vw, 15vw)";
+                        dogVar.style.transform = "translate(-15vw, 15vw)";
                     } else if (y1 < topPos + dogHeight * .65) {
-                        Ozzy1.style.transform = "translate(-20vw, 0vw)";
+                        dogVar.style.transform = "translate(-20vw, 0vw)";
                     } else {
-                        Ozzy1.style.transform = "translate(-15vw, -15vw)";
+                        dogVar.style.transform = "translate(-15vw, -15vw)";
                     }
                 }
 
