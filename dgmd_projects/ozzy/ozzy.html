@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ozzy</title>
+    <style>
+        #Ozzy1 {
+            left: 20vw;
+            top: 20vw;
+            background-image: url("Ozzy_one.png");
+            height: 35vw;
+            background-size: cover;
+        }
+        
+        #Ozzy2 {
+            left: 5vw;
+            top: 5vw;
+            background-image: url("Ozzy_two.png");
+            background-size: cover;
+            border: solid black;
+            height: 40vw;
+        }
+        
+        .dog {
+            position: fixed;
+            width: 50vw;
+            transition-duration: 3s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="Ozzy1" class="dog"> </div>
+     <div id="Ozzy2" class="dog"></div>
+
+    <script>
+        var isHover = function (dogg, x1, y1) {
+
+            var leftPos = dogg.getBoundingClientRect().left;
+            var topPos = dogg.getBoundingClientRect().top;
+
+            var dogWidth = dogg.getBoundingClientRect().width;
+            var dogHeight = dogg.getBoundingClientRect().height;
+            
+            if(x1 >= leftPos & x1 <= leftPos + dogWidth & y1 >= topPos & y1 <= topPos + dogHeight){
+                return true;
+                
+            }
+            else{
+                return false;
+            }
+
+
+        };
+
+        var dog = document.querySelector(".dog");
+
+        //        dog.addEventListener('mouseenter', function (event) {
+        //            isHover = true;
+        //
+        //        });
+        //
+        //        dog.addEventListener('mouseleave', function (event) {
+        //            isHover = false;
+        //
+        //        });
+
+        var Ozzy1 = document.getElementById("Ozzy1");
+
+        var Ozzy2 = document.getElementById("Ozzy1");
+
+
+
+        var dogMove = function (x1, y1, dogVar) {
+
+            var leftPos = Ozzy1.getBoundingClientRect().left;
+            var topPos = Ozzy1.getBoundingClientRect().top;
+            console.log(leftPos + " " + topPos);
+
+            var dogWidth = Ozzy1.getBoundingClientRect().width;
+            console.log(dogWidth);
+            var dogHeight = Ozzy1.getBoundingClientRect().height;
+            console.log(dogHeight);
+
+            if (isHover(dogVar, x1, y1)) {
+
+                if (x1 < (leftPos + dogWidth * .35)) {
+
+
+                    if (y1 < topPos + dogHeight * .35) {
+                        Ozzy1.style.transform = "translate(15vw, 15vw)";
+                    } else if (y1 < topPos + dogHeight * .65) {
+                        Ozzy1.style.transform = "translate(20vw, 0vw)";
+                    } else {
+                        Ozzy1.style.transform = "translate(15vw, -15vw)";
+                    }
+                } else if (x1 < (leftPos + dogWidth * .65)) {
+
+
+                    if (y1 < topPos + dogHeight * .35) {
+                        Ozzy1.style.transform = "translate(0vw, 20vw)";
+                    } else if (y1 < topPos + dogHeight * .65) {
+                        Ozzy1.style.transform = "translate(20vw, 0vw)";
+                    } else {
+                        Ozzy1.style.transform = "translate(0vw, -20vw)";
+                    }
+                } else {
+
+
+                    if (y1 < topPos + dogHeight * .35) {
+                        Ozzy1.style.transform = "translate(-15vw, 15vw)";
+                    } else if (y1 < topPos + dogHeight * .65) {
+                        Ozzy1.style.transform = "translate(-20vw, 0vw)";
+                    } else {
+                        Ozzy1.style.transform = "translate(-15vw, -15vw)";
+                    }
+                }
+
+            }
+
+
+
+        }
+
+        document.body.addEventListener('mousemove', function (event) {
+            
+            for(var i=1; i<3; i++)
+            {
+                var dogString = "Ozzy" + i;
+                
+                var newDog = document.getElementById(dogString);
+                console.log(dogString);
+                dogMove(event.x, event.y, newDog);
+            }
+            
+  
+
+        });
+        
+        
+    </script>
+
+   
+
+
+
+
+</body>
+
+</html>
