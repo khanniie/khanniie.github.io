@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input > Background Color</title>
+    <style>
+    body {
+        transition: 1s;
+        background-color: pink;
+    }
+    </style>
+</head>
+
+<body>
+    <script src='generateInput.js'>
+    	
+    </script>
+    <script>
+
+    var input;
+
+  
+    function changeBackgroundColor() {
+
+        document.body.style.backgroundColor = "rgb(" + Math.floor(input/700 * 255) + "," + Math.floor(input/700 * 255) + "," + Math.floor(input/700 * 255) + ")";
+
+        console.log(input/700*255)
+        generateInput();
+    }
+
+   
+    setInterval(changeBackgroundColor, 1000);
+    </script>
+</body>
+
+</html>
