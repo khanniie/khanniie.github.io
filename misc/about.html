@@ -27,7 +27,7 @@ This is my personal site and that is a dog!
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
+    <link href="../jumbotron.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!--   <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
@@ -37,6 +37,16 @@ This is my personal site and that is a dog!
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+    <style>
+        .me{
+            margin-top: 10px;
+            bottom: 0px;
+            width:100%;
+        }
+        .resize{
+            width:87%;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,7 +60,7 @@ This is my personal site and that is a dog!
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="https://khanniie.github.io"><img src="images/logo.jpg"></a>
+                    <a class="navbar-brand" href="https://khanniie.github.io"><img src="../images/logo.jpg"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -66,14 +76,27 @@ This is my personal site and that is a dog!
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <div class="col-md-12">
-            
-        </div>
+        <div class="row">
+        <div class="col-sm-5">
+            <img src="images/transparent-background.png" class="me resize">
+</div>
+        <div class="col-md-4">
+        <h2>About me</h2>
+        <p>I'm a high school senior living in Southern California! I go by Connie, and I like art, computer science, and dogs. I really like dogs. </p>
+        <p>This site contains some of my art and contains a few code snippets I've written. </p>
+        <p>Feel free to contact me at constanceye1316@gmail.com if you'd like to talk about dogs (or anything else)!</p>
+
+        </div>   
+<div class="col-sm-3">
+            <img src="images/meimei.png" class="me">
+            <img src="images/connie-transparent-background-2.png" class="me">
+</div>
+ </div>
   
         <footer class="footer">
             <p>&copy; 2016 Constance Ye</p>
         </footer>
-    </div>
+
     <!-- /container -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
