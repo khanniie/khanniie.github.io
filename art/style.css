@@ -17,11 +17,11 @@ body{
    padding: 3px !important;
    margin: 0px !important;
 }
-#cboxContent {
-
+#cboxLoadedContent {
+background-color: black !important;
 }
 .art-overlay{
-		text-align: center;
+	text-align: center;
 	-webkit-transition-duration: 5s; 
 	transition-duration: 0.75s;
 	opacity: 0;
@@ -45,6 +45,11 @@ a{
 
 .art-overlay p{
 	padding-top: 40%;
+}
+.intro{
+	text-align: center;
+	font-family: Raleway, Helvetica, times;
+	color: rgb(100, 100, 100);
 }
 
 h2{
