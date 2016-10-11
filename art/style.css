@@ -14,7 +14,7 @@ body{
 	width: 100%;
 }
 .nopadding {
-   padding: 3px !important;
+   padding: 4px !important;
    margin: 0px !important;
 }
 #cboxLoadedContent {
@@ -28,8 +28,8 @@ background-color: black !important;
 	position: absolute;
 	left: 3px;
 	top: 3px;
-	width: calc(100% - 6px);
-	height: calc(100% - 6px);
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
 	background-color: rgba(0, 0, 0, 0.8);
 	vertical-align:middle;
 }
