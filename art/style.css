@@ -3,10 +3,56 @@
 		width:80%;
 	}
 }*/
+body{
+
+}
 .art{
 	width:47%;
 	margin: 5px;
 }
 .art2{
-	width: 30%;
+	width: 100%;
+}
+.nopadding {
+   padding: 3px !important;
+   margin: 0px !important;
+}
+#cboxContent {
+
+}
+.art-overlay{
+		text-align: center;
+	-webkit-transition-duration: 5s; 
+	transition-duration: 0.75s;
+	opacity: 0;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	width: calc(100% - 6px);
+	height: calc(100% - 6px);
+	background-color: rgba(0, 0, 0, 0.8);
+	vertical-align:middle;
+}
+a:hover .art-overlay{
+	opacity: 1;
+	color: white;
+}
+
+a{
+	color: grey;
+	font-family: Raleway, Arial, Helvetica, Sans-serif;
+}
+
+.art-overlay p{
+	padding-top: 40%;
+}
+
+h2{
+	text-align: center;
+	color: rgb(75, 75, 75);
+	font-family: 'Calligraffitti', cursive;
+}
+
+i{
+	font-size: 0.8em;
 }
