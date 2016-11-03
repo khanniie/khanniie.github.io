@@ -1,6 +1,3 @@
-var counter2 = 0;
-
-
 function setup() {
 
     createCanvas(windowWidth, windowHeight);
@@ -16,11 +13,9 @@ function draw() {
     colorMode(RGB, 255, 255, 255);
     fill(175, 175, 175);
     text("press down to stop...", windowWidth/2 - 45, windowHeight - 70);
-    drawGradient(windowWidth/2, windowHeight/2, random(130, 150), counter2);
-    counter2+= 2;
-    fill(255);
-
+    drawGradient(windowWidth/2, windowHeight/2, random(130, 150), 2);
 }
+
 function mousePressed(){
 noLoop();
 }
@@ -39,3 +34,5 @@ function drawGradient(x, y, ran, comp) {
         ran = (ran + comp) % 360;
     }
 }
+
+
