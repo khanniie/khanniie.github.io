@@ -15,7 +15,7 @@ function draw() {
     textSize(12);
     colorMode(RGB, 255, 255, 255);
     fill(175, 175, 175);
-    text("press down to stop...", windowWidth/2 - 45, windowHeight - 70);
+    text("press down and hold to stop...", windowWidth/2 - 45, windowHeight - 70);
     drawGradient(windowWidth/2, windowHeight/2, random(130, 150), counter2);
     counter2+= 2;
     fill(255);
