@@ -3,10 +3,10 @@
 		width:80%;
 	}
 }*/
-body{
-
+/*body{
+	background-color: white;
 }
-.art{
+*/.art{
 	width:47%;
 	margin: 5px;
 }
@@ -15,7 +15,7 @@ body{
 }
 .nopadding {
    padding: 4px !important;
-   margin: 0px !important;
+/*   margin: 0px !important;*/
 }
 #cboxLoadedContent {
 background-color: black !important;
@@ -40,7 +40,7 @@ a:hover .art-overlay{
 
 a{
 	color: grey;
-	font-family: Raleway, Arial, Helvetica, Sans-serif;
+	font-family: Arial, Helvetica, Sans-serif;
 }
 
 .art-overlay p{
@@ -48,14 +48,14 @@ a{
 }
 .intro{
 	text-align: center;
-	font-family: Raleway, Helvetica, times;
+	font-family: Helvetica, times;
 	color: rgb(100, 100, 100);
 }
 
 h2{
 	text-align: center;
 	color: rgb(75, 75, 75);
-	font-family: 'Calligraffitti', cursive;
+	font-family:  Helvetica;
 }
 
 i{

@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(240,250,255);
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar-img{
+	width: 150px;
+}
+a:hover{
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+.navbar-img-fit{
+	width:90%;
+	max-width: 500px;
+}
+/*.active{
+	background-image: url("active.png");
+	background-size: 200px;
+}*/
+
+#header-name{
+	width: 35%;
+	min-width: 150px;
+}
