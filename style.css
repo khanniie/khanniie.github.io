@@ -13,8 +13,7 @@ a:hover{
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 .navbar-img-fit{
-	width:90%;
-	max-width: 500px;
+	width:33%;
 }
 /*.active{
 	background-image: url("active.png");
@@ -24,4 +23,8 @@ a:hover{
 #header-name{
 	width: 35%;
 	min-width: 150px;
+}
+.navbar-img-quarter{
+	width: 25%;
+	max-width: 70px;
 }
