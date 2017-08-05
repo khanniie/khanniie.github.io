@@ -13,6 +13,9 @@ a:hover{
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 .navbar-img-fit{
+	width:90%;
+}
+.navbar-img-third{
 	width:33%;
 }
 /*.active{
