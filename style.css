@@ -28,6 +28,11 @@ a:hover{
 	min-width: 150px;
 }
 .navbar-img-quarter{
-	width: 25%;
+	width: 20%;
 	max-width: 70px;
+}
+
+#pancake{
+	width: 30px;
+	padding-top: 20px; 
 }
