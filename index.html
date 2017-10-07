@@ -11,38 +11,101 @@
     <link rel="icon" href="images/favicon.gif">
     <!--     <link rel="icon" href="bootstrap-3.3.7/favicon.ico"> -->
     <title>Connie Ye</title>
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
-        
+    <link href="art/colorbox/colorbox.css" rel="stylesheet">
+    <script src="art/colorbox/jquery.colorbox-min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // $(".portfolio-work").colorbox({
+        //     rel: 'group1'
+        // });
+        $(".portfolio-work").colorbox({
+            rel: 'group1',
+            transition: "fade",
+            width: "50%",
+            height: "90%"
+        });
+    });
+    </script>
+    <style>
+        body{
+    font-size: .8em;
+}
+    </style>
+    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
     <div class="container">
-        <div class="starter-template">
-            <img id="header-name" src="images/connie-home.png" />
-            <div class="row">
-               <a href="https://khanniie.github.io/code.html" class="code-morph"><img id="codeimg" class = "navbar-img-third" src="images/code-ani-one.png"/></a>
-               <a href="https://khanniie.github.io/art.html" class="art-morph"><img id="artimg" class = "navbar-img-third" src="images/art-ani-one.png"/></a>
-               <a class="about-morph" href="https://khanniie.github.io/about.html"><img id = "aboutimg" class = "navbar-img-third" src="images/about-ani-one.png"/></a>
+        <div class="row justify-content-start">
+            <div class="col-xs-8">
+                <img src="images/logo.gif" id="logo" />
             </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"><a href="https://github.com/khanniie/"><img class = "navbar-img-quarter" src="images/github.png"/></a><a href="mailto:constanceye1316@gmail.com"><img class = "navbar-img-quarter" src="images/email.png"/></a><a href="https://www.instagram.com/meimeithemorkie/"><img class = "navbar-img-quarter" src="images/dog.png"/></a><a href="https://www.youtube.com/channel/UCngcWj8ILwE4J9pip55zcPw"><img class = "navbar-img-quarter" src="images/youtube.png"/></a></div>
-                <div class="col-md-4"></div>
+            <div class="col-xs-4">
+                <ul class="sidelist">
+                    <li><a href="https://github.com/khanniie/"><img class="small" src="images/github.png" alt="logo"/> github</a></li>
+                    <li><a href="mailto:constany@andrew.cmu.edu"><img class="small" src="images/email.png" alt="logo"/> constany@andrew.cmu.edu</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCngcWj8ILwE4J9pip55zcPw"><img class="small" src="images/youtube.png" alt="logo"/> youtube</a></li>
+                    <li><a href="https://www.instagram.com/meimeithemorkie/"><img class="small" src="images/dog.png" alt="logo"/> my dog's instagram</a></li>
+                </ul>
             </div>
         </div>
-        <!-- /.container -->
-        <!-- Bootstrap core JavaScript
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Hello World! I'm an undergraduate at Carnegie Mellon, pursuing a Bachelor's of Computer Science and Art.
+            </div>
+        </div>
+                <br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="box"><a href="http://connieye.com/Doodle-Date/"><img src="images/doodle-date.png"></div>
+                <h3>Doodle Date <i>(2016, Javascript)</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <div class="box"><a href="http://connieye.com/kale-kaleidoscope/"><img src="images/kaleidoscope.png"></div>
+                <h3>Interactive Kaleidoscope <i>(2016, Javascript, p5.js)</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <div class="box"><a href="art/pastlives3.jpg" class="portfolio-work"><img id="moveup" src="art/pastlives-thumb.jpg"></div>
+                <h3>tfw you see a dog <i>(2017, Acrylic/Plexiglass)</i></h3></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="box"><a href="http://connieye.com/robot-code-bob-the-builder-version/"><img src="images/botcode.png"></div>
+                <h3>Lightbot+Scratch <i>(2017, Javascript)</i></h3></a>
+            </div>
+               <div class="col-md-4">
+                <div class="box"><a href="art/homecoming.jpg" class="portfolio-work"><img src="art/homecoming-thumb.jpg"></div>
+                <h3>homecoming <i>(2016, Acrylic)</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <div class="box"><a href="http://connieye.com/Snow-Gum/temp.html"><img src="images/snow-gum.png"></div>
+                <h3>HackCMU: Snow Gum <i>(2017, Javascript, Team)</i></h3></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="box"><a href="code.html"><img src="images/doggo.png"></div>
+                <h3><i>more small coding projects</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <div class="box"><a href="art.html"><img src="art/sketchbook-mermaid-thumb.jpg"></div>
+                <h3><i>more art</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <div class="box"><a href="about.html"><img src="art/dog-portrait-thumb.jpg"></div>
+                <h3><i>about me</i></h3></a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>
-        window.jQuery || document.write('<script src="jquery-2.3.1.min.js"><\/script>')
-        </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
 </body>
 
 </html>
