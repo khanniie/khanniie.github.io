@@ -32,71 +32,86 @@
     });
     </script>
     <style>
-        body{
-    font-family: 'VT323', monospace;
-    font-size: 1.3em;
-}
-.container{
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-#logo{
-    padding: 10px;
-    width: 100%;
-/*  left: 20%;*/
-}
+    body {
+        font-family: 'VT323', monospace;
+        font-size: 1.3em;
+    }
 
-.sidelist{
-    padding: 20px;
-/*    position: absolute;
+    .container {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    #logo {
+        padding: 10px;
+        width: 100%;
+        /*  left: 20%;*/
+    }
+
+    .sidelist {
+        padding: 20px;
+        /*    position: absolute;
     top: 20%;*/
-    font-size: 0.7em;
-    list-style: none;
-}
-.col-md-4{
-    padding: 20px;
-}
-.box{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 200px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-}
-.box img{
-    position: absolute;
-    top: -10%;
-    left: -20%;
-    width: 140%;
-    opacity: 1;
-    transition-duration: 1s;
-}
-.box img:hover{
-opacity: .4;
-}
+        font-size: 0.7em;
+        list-style: none;
+    }
 
-#moveup{
-    top: -60%;
-}
-.small{
-    width: 15px;
-}
-h3{
-    margin-top: 15px;
-    font-size: 0.8em;
-    color: rgb(75, 75, 75);
-}
-.fade{
-    opacity: .3!important;
-}
-h4{
-    color: black;
-    font-size: 1.7em;
-    position: absolute;
-    top: 40%;
-    left: 30%;
+    .col-md-4 {
+        padding: 20px;
+    }
 
-}
+    .box {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 200px;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .box img {
+        position: absolute;
+        top: -10%;
+        left: -20%;
+        width: 140%;
+        opacity: 1;
+        transition-duration: 1s;
+    }
+
+    .box img:hover {
+        opacity: .4;
+    }
+
+    #moveup {
+        top: -60%;
+    }
+
+    .small {
+        width: 15px;
+    }
+
+    h3 {
+        margin-top: 15px;
+        font-size: 0.8em;
+        color: rgb(75, 75, 75);
+    }
+
+    .fade {
+        opacity: .3!important;
+    }
+
+    h4 {
+        color: black;
+        font-size: 1.7em;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+
+    #utopia {
+        width: 120%;
+        top: -60px;
+        left: -40px;
+    }
     </style>
     <!-- <script src="script.js"></script> -->
 </head>
@@ -121,46 +136,70 @@ h4{
                 <p>Hello World! I'm an undergraduate at Carnegie Mellon, pursuing a Bachelor's of Computer Science and Art.
             </div>
         </div>
-                <br>
+        <br>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="box"><a href="http://connieye.com/Doodle-Date/"><img src="images/doodle-date.png"></div>
-                <h3>Doodle Date <i>(2016, Javascript)</i></h3></a>
+                <a href="http://connieye.com/Doodle-Date/">
+                    <div class="box"><img src="images/doodle-date.png"></div>
+                    <h3>Doodle Date <i>(2016, Javascript)</i></h3></a>
             </div>
             <div class="col-md-4">
-                <div class="box"><a href="http://connieye.com/kale-kaleidoscope/"><img src="images/kaleidoscope.png"></div>
-                <h3>Interactive Kaleidoscope <i>(2016, Javascript, p5.js)</i></h3></a>
+                <a href="http://connieye.com/kale-kaleidoscope/">
+                    <div class="box"><img src="images/kaleidoscope.png"></div>
+                    <h3>Interactive Kaleidoscope <i>(2016, Javascript, p5.js)</i></h3></a>
             </div>
             <div class="col-md-4">
-                <div class="box"><a href="art/pastlives3.jpg" class="portfolio-work"><img id="moveup" src="art/pastlives-thumb.jpg"></div>
-                <h3>tfw you see a dog <i>(2017, Acrylic/Plexiglass)</i></h3></a>
+                <a href="https://devpost.com/software/color-controlled-vr-controller">
+                    <div class="box"><img src="images/cooking-mama.png"></div>
+                    <h3>BostonHacks: Color Controlled VR <i>(2017, Javascript)</i></h3></a>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="box"><a href="http://connieye.com/robot-code-bob-the-builder-version/"><img src="images/botcode.png"></div>
-                <h3>Lightbot+Scratch <i>(2017, Javascript)</i></h3></a>
-            </div>
-               <div class="col-md-4">
-                <div class="box"><a href="art/homecoming.jpg" class="portfolio-work"><img src="art/homecoming-thumb.jpg"></div>
-                <h3>homecoming <i>(2016, Acrylic)</i></h3></a>
+                <a href="art/pastlives3.jpg" class="portfolio-work">
+                    <div class="box"><img id="moveup" src="art/pastlives-thumb.jpg"></div>
+                    <h3>tfw you see a dog <i>(2017, Acrylic/Plexiglass)</i></h3></a>
             </div>
             <div class="col-md-4">
-                <div class="box"><a href="http://connieye.com/Snow-Gum/temp.html"><img src="images/snow-gum.png"></div>
-                <h3>HackCMU: Snow Gum <i>(2017, Javascript, Team)</i></h3></a>
+                <a href="http://connieye.com/Snow-Gum/temp.html">
+                    <div class="box"><img src="images/snow-gum.png"></div>
+                    <h3>HackCMU: Snow Gum <i>(2017, Javascript, Team)</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://connieye.com/good-vibes-only/">
+                    <div class="box"><img src="images/utopia.png" id="utopia"></div>
+                    <h3>a world where you're always happy <i>(2017, Javascript)</i></h3></a>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="box"><a href="code.html"><img class="fade" src="images/doggo.png"></div>
-                <h4><i>more code</i></h3></a>
+                <a href="art/homecoming.jpg" class="portfolio-work">
+                    <div class="box"><img src="art/homecoming-thumb.jpg"></div>
+                    <h3>homecoming <i>(2016, Acrylic)</i></h3></a>
             </div>
             <div class="col-md-4">
-                <div class="box"><a href="art.html"><img class="fade" src="art/sketchbook-mermaid-thumb.jpg"></div>
+                <a href="art/fan-bing-bing.jpg" class="portfolio-work">
+                    <div class="box"><img src="art/fan-bing-bing-thumb.jpg"></div>
+                    <h3>Fan Bing Bing <i>(2016, Oil Paint)</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://connieye.com/robot-code-bob-the-builder-version/">
+                    <div class="box"><img src="images/botcode.png"></div>
+                    <h3>Lightbot+Scratch <i>(2017, Javascript)</i></h3></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a href="code.html">
+                    <div class="box"><img class="fade" src="images/doggo.png"></div>
+                    <h4><i>more code</i></h3></a>
+            </div>
+            <div class="col-md-4">
+                <a href="art.html"><div class="box"><img class="fade" src="art/sketchbook-mermaid-thumb.jpg"></div>
                 <h4><i>more art</i></h3></a>
             </div>
             <div class="col-md-4">
-                <div class="box"><a href="about.html"><img class="fade" src="art/dog-portrait-thumb.jpg"></div>
+                <a href="about.html"><div class="box"><img class="fade" src="art/dog-portrait-thumb.jpg"></div>
                 <h4><i>about me</i></h3></a>
             </div>
         </div>
