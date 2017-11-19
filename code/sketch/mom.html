@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+</head>
+<body>
+	<audio autoplay loop src="hpd.mp3"></audio>
+
+	<a-scene> 
+	<a-assets>
+		<img id="pic1" src="IMG_1451.jpg">
+		<img id="pic2" src="dinner.jpg">
+		<img id="pic3" src="ny.jpg">
+		<img id="pic4" src="mei.jpg">
+		<img id="pic5" src="old.jpg">
+	</a-assets>
+		<a-entity particle-system="preset: snow; particleCount: 4000; size: 2;"></a-entity>
+	<a-sky color="#E2C6E7"></a-sky>
+	<a-plane src="#pic1" width="2" height="3" position="0 1 -4"></a-plane>
+	<a-plane src="#pic2" width="2.75" height="2" position="3 1 -2" rotation="0 -45 0 "></a-plane>
+	<a-plane src="#pic3" width="2.75" height="2" position="-3 1 -2" rotation="0 45 0 "></a-plane>
+	<a-plane src="#pic4" width="2" height="3" position="0 4.5 -3.5" rotation="30 0 0 "></a-plane>
+	<a-plane src="#pic5" width="3" height="2" position="0 -2 -3.5" rotation="-30 0 0 "></a-plane>
+
+	</a-scene>
+</body>
+</html>
