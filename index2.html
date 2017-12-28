@@ -157,7 +157,7 @@
     }
 
     #code {
-        background-image: url("images/bathroom-VR.png");
+        background-image: url("images/bathroom-VR.PNG");
         background-size: cover;
     }
 
@@ -446,6 +446,7 @@
             box.children().children(".quad").css("opacity", "0");
         });
 
+        //need to fix for mobile
         $(".box").click(function() {
             if(!isMobile) return;
             var box = $(this);
