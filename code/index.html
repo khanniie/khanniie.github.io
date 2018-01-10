@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/favicon.gif">
+    <link rel="icon" href="../images/favicon.gif">
     <title>Connie Ye</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="../style2.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Arima+Madurai|Crimson+Text|Homemade+Apple|Inconsolata|Open+Sans|PT+Mono|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300|Halant:300|Neuton:200|Titillium+Web:300" rel="stylesheet">
+    <link href="../style2.css" rel="stylesheet">
     <script>
     $(document).ready(function() {
         $('#sidebarCollapse').on('click', function() {
@@ -33,10 +33,25 @@
     .row li {
         font-size: 1.3em;
     }
-    h4{
+
+    h4 {
         font-weight: 800;
         color: #DEA19C;
         text-decoration: none!important;
+    }
+
+    .btn-info {
+        background-color: #FFF;
+        border: 1px solid black;
+        color: black;
+    }
+
+    .intro-text {
+        color: #DEA19C!important;
+        text-decoration: none!important;
+    }
+    .smallerimg{
+        width: 40%;
     }
     </style>
 </head>
@@ -50,17 +65,17 @@
                     <a href="https://connieye.com" ">Home</a>
                 </li>
                 <li>
-                    <a href="#artSubmenu" data-toggle="collapse" aria-expanded="false">Art</a>
-                    <ul class="collapse list-unstyled" id="artSubmenu">
-                        <li><a href="https://connieye.com/art/index.html">All</a></li>
-                        <li><a href="https://connieye.com/art/art-traditional.html">Traditional</a></li>
-                        <li><a href="https://connieye.com/art/art-digital.html">Digital + Animations</a></li>
-                        <li><a href="https://connieye.com/art/art-speed-paintings.html">Speed Paintings</a></li>
-                        <li><a href="https://connieye.com/art/art-sketchbook.html">Sketchbook</a></li>
+                    <a href="#artSubmenu " data-toggle="collapse " aria-expanded="false ">Art</a>
+                    <ul class="collapse list-unstyled " id="artSubmenu ">
+                        <li><a href="https://connieye.com/art/index.html ">All</a></li>
+                        <li><a href="https://connieye.com/art/art-traditional.html ">Traditional</a></li>
+                        <li><a href="https://connieye.com/art/art-digital.html ">Digital + Animations</a></li>
+                        <li><a href="https://connieye.com/art/art-speed-paintings.html ">Speed Paintings</a></li>
+                        <li><a href="https://connieye.com/art/art-sketchbook.html ">Sketchbook</a></li>
                     </ul>
                 </li>
-                <li class="active">
-                    <a href="https://connieye.com/about.html" ">Code</a>
+                <li class="active ">
+                    <a href="https://connieye.com/about.html " ">Code</a>
                     <!-- <a href="#codeSubmenu" data-toggle="collapse" aria-expanded="false">Code</a>
                     <ul class="collapse list-unstyled" id="codeSubmenu">
                         <li><a href="#">All</a></li>
@@ -87,12 +102,12 @@
         <div id="content " class="container ">
             <button type="button " id="sidebarCollapse " class="btn btn-info navbar-btn ">
                 <!--                             <i class="glyphicon glyphicon-align-left "></i> -->
-                <span>navigation</span>
+                <span id="navButton ">navigation</span>
             </button>
             <div class="row ">
                 <div class="col-sm-12 ">
-                    <h1 class="pixelated text-center "><a href="https://connieye.com">Constance Ye</a></h1>
-                    <p class="bold text-center ">• <a href="code.html "> Github </a> • <a href="art.html "> Email </a> • <a href="about.html "> Resume </a> • </p>
+                    <h1 class="pixelated text-center "><a href="https://connieye.com ">Constance Ye</a></h1>
+                    <p class="bold text-center ">• <a class="intro-text " href="code.html "> Github </a> • <a class="intro-text " href="art.html "> Email </a> • <a class="intro-text " href="about.html "> Resume </a> • </p>
                     <div class="line "></div>
                 </div>
             </div>
@@ -103,13 +118,9 @@
                 </div>
         </div>
         <div class="row ">
-            <h4>#LARGER PROJECTS</h4>
+            <h4>#LARGER INDEPENDENT PROJECTS</h4>
             <ul>
-                <li><a href="http://tinyurl.com/p5js-webdev "><b> 2017 WEB DEV WEEKEND P5.js TALK:  </b></a>Rain and I gave a talk about p5.js! You can find the slides linked :)</li>
-                <br>
-                <li><a href="https://devpost.com/software/color-controlled-vr-controller "><b> 2017 BostonHacks team project - Color Controlled VR:  </b></a>We wanted to recreate Cooking Mama in virtual reality but without the use of controllers that make VR more inaccessible. Our "controller " is a colored paper on the back of the user's hand, which is tracked by the library tracking.js! You can try it yourself, but I've linked the devpost which includes a video and a link to the actual live demo.</li>
-                <br>
-                <li><a href="https://khanniie.github.io/Snow-Gum/temp.html "><b> 2017 HACKCMU team project - Snow Gum:  </b></a>Cute game to teach children ages 4 - 6 Spanish colors through voice recognition! Thank you Cece and Alyssa!</li>
+                <li><a href="https://connieye.com/good-vibes-only/"><b> 2017 A World Where You're Always Happy:  </b></a>project for my concept studio art class! Uses clmtracker for facial feature tracking / modiciation.</li>
                 <br>
                 <li><a href="https://khanniie.github.io/robot-code-bob-the-builder-version/ "><b> 2017   -   Lightbot + Scratch:  </b></a>Web application that allows students in AP Computer Science Principles to test out their block code in preparation for AP test questions about a robot on a grid. Users drag and drop blocks (move, rotate, repeat loop, if/else, can-move) and watch their block code play out on a grid of modifiable size with custom obstacle locations.</li>
                 <br>
@@ -118,24 +129,39 @@
         </div>
         <br>
         <div class="row ">
-            <h4>#SORTING ALGORITHM VISUALIZATION</h4>
+            <h4>#COLLABORATIVE WORK</h4>
             <ul>
+                <li><a href="https://www.youtube.com/watch?v=R-ySfk5PLh8"><b> 2017 BOT A RAZZI:  </b></a>Final concept studio project; worked in a team of 4. Floating robots follow the user around in this VR experience built for the Google Cardboard using Aframe.js. The robot "view" info is sent to a differnt screen that projects a fake instagram profile with the video stream. I worked on the projections, sending and retriving the data using Firebase. I also 3d modeled some of the models included and built the fake social media pages and their fake chat streams.</li>
+                <li><a href="https://remel.itch.io/remel"><b> 2017 REMEL:</b></a> Part of Game Creation Society Club. Game won first at the showcase! I programmed and animated the 4th enemy, the Blob.</li>
+                <br>
+                <li><a href="http://tinyurl.com/p5js-webdev "><b> 2017 WEB DEV WEEKEND P5.js TALK:  </b></a>Rain and I gave a talk about p5.js! You can find the slides linked :)</li>
+                <br>
+                <li><a href="https://devpost.com/software/color-controlled-vr-controller "><b> 2017 BostonHacks team project - Color Controlled VR:  </b></a>We wanted to recreate Cooking Mama in virtual reality but without the use of controllers that make VR more inaccessible. Our "controller " is a colored paper on the back of the user's hand, which is tracked by the library tracking.js! You can try it yourself, but I've linked the devpost which includes a video and a link to the actual live demo.</li>
+                <br>
+                <li><a href="https://khanniie.github.io/Snow-Gum/temp.html "><b> 2017 HACKCMU team project - Snow Gum:  </b></a>Cute game to teach children ages 4 - 6 Spanish colors through voice recognition! Thank you Cece and Alyssa!</li>
+            </ul>
+        </div>
+        <br>
+        <div class="row ">
+            <h4>#DATA VISUALIZATION</h4>
+            <ul>
+                <li><img class="smallerimg" src="../images/magazine-word-freq.png">
+                    <br>
+                <img class="smallerimg" src="../images/smiling-visual.png">
+                    <br>
+                <img class="smallerimg" src="../images/age-ranges-w-people.png">
+                <br>
+            December 2017 - Data Visualization of Magazines using Processing</li>
                 <li><a href="https://jsfiddle.net/ozsLtxhb/66/ "><b> November 2017 - Selection Sort</b></a><br>
                     <img src="https://media.giphy.com/media/xUNd9NWkeaYHU3Z9wk/giphy.gif " width="200px "></li>
             </ul>
         </div>
         <br>
-         <div class="row ">
-            <h4>#SEMINAR PROJECTS</h4>
-            <ul>
-                 <li><a href="https://connieye.com/BXA/naturalhistory/ "><b> November 2017 - A Natural History of This Thing (I like this one!! :) )</b></li>
-                <li><a href="https://connieye.com/BXA/ "><b> October 2017 - Experiential Scavenger Hunt </b></a></li>
-            </ul>
-        </div>
-        <br>
         <div class="row ">
             <h4>#JS SKETCHES</h4>
-            <ul>
+            <ul>   
+                <li><a href="https://connieye.com/BXA/naturalhistory/ "><b> November 2017 - BXA Seminar Project A Natural History of This Thing (I like this one!! :) )</b></li>
+                <li><a href="https://connieye.com/BXA/ "><b> October 2017 - BXA Seminar Project Experiential Scavenger Hunt </b></a></li>
                 <li><a href="https://jsfiddle.net/ozsLtxhb/65/ ">11/04/17- Guy Fieri/ Subra Sticker jsfiddle</a></li>
                 <li><a href="https://khanniie.github.io/Q-o-METER/ ">04/07/17- Q-o-METER - compare flickr tag popularity</a></li>
                 <li><a href="https://khanniie.github.io/kale-kaleidoscope/ ">01/17/17 - Kaleidoscope!!! (refresh page for the automatic button to work) *p5.js</a></li>
