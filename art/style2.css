@@ -1,0 +1,37 @@
+  body {
+        font-family: 'Exo 2', sans-serif;
+        margin-top: 50px;
+        padding: none;
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    .container-fluid {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .col-md-4 {
+        padding: 35px;
+    }
+
+    /*intro styles*/
+    .intro-pic {
+        width: 100%;
+    }
+
+    .pixelated {
+        font-family: 'Homemade Apple', cursive;
+    }
+
+    .bold {
+        color: #DEA19C;
+        font-weight: 800;
+    }
+
+    a {
+        font-weight: 800;
+        color: #DEA19C;
+        text-decoration: none!important;
+    }

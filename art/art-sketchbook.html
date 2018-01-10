@@ -7,19 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/favicon.gif">
+    <link rel="icon" href="../images/favicon.gif">
     <title>Connie Ye</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="style2.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Arima+Madurai|Crimson+Text|Homemade+Apple|Inconsolata|Open+Sans|PT+Mono|Roboto" rel="stylesheet">
     <link href="colorbox/colorbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300|Halant:300|Neuton:200|Titillium+Web:300" rel="stylesheet">
     <script src="colorbox/jquery.colorbox-min.js"></script>
     <script>
     $(document).ready(function() {
+        $(".portfolio-work").colorbox({
+            rel: 'group1',
+            transition: "fade",
+            width: "50%",
+            height: "90%"
+        });
         $('#sidebarCollapse').on('click', function() {
             $('#sidebar').toggleClass('active');
         });
@@ -27,6 +33,20 @@
     });
     </script>
     <style>
+    .art1 {
+        background-image: url("sketchbook/mermaid-thumb.jpg");
+        background-size: cover;
+    }
+
+    .art2 {
+        background-image: url("sketchbook/lily-thumb.jpg");
+        background-size: cover;
+    }
+
+    .art3 {
+        background-image: url("sketchbook/homecoming-thumbnails-thumb.jpg");
+        background-size: cover;
+    }
     </style>
 </head>
 
@@ -35,14 +55,14 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <ul class="list-unstyled components">
-                <li>
+                <li class="active">
                     <a href="#artSubmenu" data-toggle="collapse" aria-expanded="false">Art</a>
                     <ul class="collapse list-unstyled" id="artSubmenu">
                         <li><a href="https://connieye.com/art/index.html">All</a></li>
                         <li><a href="https://connieye.com/art/art-traditional.html">Traditional</a></li>
                         <li><a href="https://connieye.com/art/art-digital.html">Digital + Animations</a></li>
                         <li><a href="https://connieye.com/art/art-speed-paintings.html">Speed Paintings</a></li>
-                        <li><a href="https://connieye.com/art/art-sketchbook.html">Sketchbook</a></li>
+                        <li class="active"><a href="https://connieye.com/art/art-sketchbook.html">Sketchbook</a></li>
                     </ul>
                 </li>
                 <li>
@@ -56,7 +76,7 @@
                         <li><a href="#">Data Visualizations</a></li>
                     </ul> -->
                 </li>
-                <li class="active">
+                <li>
                     <a href="https://connieye.com/about.html"">About</a>
                 </li>
                 <li>
@@ -84,8 +104,43 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <h5 class="text-center">Hello World! I'm an undergraduate at Carnegie Mellon, studying Computer Science and Fine Art. Feel free to contact me at constany@andrew.cmu.edu if you'd like to talk about dogs!</h5>
+                    <h3 class="text-center">Sketchbook</h3>
                     <div class="line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 nopadding">
+                    <a href="sketchbook/mermaid.jpg" class="portfolio-work">
+                        <div class="art-overlay">
+                            <p> mermaid
+                                <br>
+                                <br>2017
+                                <br> <i> Click for full view. </i></p>
+                        </div>
+                    </a>
+                    <div class="box art1"></div>
+                </div>
+                <div class="col-sm-4 nopadding">
+                    <a href="sketchbook/lily.jpg" class="portfolio-work">
+                        <div class="art-overlay">
+                            <p> lilymaymac
+                                <br>
+                                <br>2017
+                                <br> <i> Click for full view. </i></p>
+                        </div>
+                    </a>
+                    <div class="box art2"></div>
+                </div>
+                <div class="col-sm-4 nopadding">
+                    <a href="sketchbook/homecoming-thumbnails.jpg" class="portfolio-work">
+                        <div class="art-overlay">
+                            <p> homecoming thumbnails
+                                <br>
+                                <br> 2017
+                                <br> <i> Click for full view. </i></p>
+                        </div>
+                    </a>
+                    <div class="box art3"></div>
                 </div>
             </div>
         </div>

@@ -5,214 +5,224 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.gif">
-    <!--     <link rel="icon" href="bootstrap-3.3.7/favicon.ico"> -->
     <title>Connie Ye</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Arima+Madurai|Crimson+Text|Homemade+Apple|Inconsolata|Open+Sans|PT+Mono|Roboto" rel="stylesheet">
     <link href="art/colorbox/colorbox.css" rel="stylesheet">
-    <script src="art/colorbox/jquery.colorbox-min.js"></script>
-    <script>
-    $(document).ready(function() {
-        // $(".portfolio-work").colorbox({
-        //     rel: 'group1'
-        // });
-        $(".portfolio-work").colorbox({
-            rel: 'group1',
-            transition: "fade",
-            width: "50%",
-            height: "90%"
-        });
-    });
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300|Halant:300|Neuton:200|Titillium+Web:300" rel="stylesheet">
     <style>
+
+    /*bootstrap grid modifications*/
     body {
-        font-family: 'VT323', monospace;
-        font-size: 1.3em;
+        font-family: 'Exo 2', sans-serif;
+        margin-top: 50px;
+        padding: none;
+        font-weight: 500;
+        font-size: 1em;
     }
 
-    .container {
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
-
-    #logo {
-        padding: 10px;
-        width: 100%;
-        /*  left: 20%;*/
-    }
-
-    .sidelist {
-        padding: 20px;
-        /*    position: absolute;
-    top: 20%;*/
-        font-size: 0.7em;
-        list-style: none;
+    .container-fluid {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .col-md-4 {
-        padding: 20px;
+        padding: 35px;
     }
 
+    /*intro styles*/
+    .intro-pic {
+        width: 100%;
+    }
+
+    .pixelated {
+        font-family: 'Homemade Apple', cursive;
+    }
+
+    .bold {
+        color: #DEA19C;
+        font-weight: 800;
+    }
+
+    a {
+        font-weight: 800;
+        color: #DEA19C;
+        text-decoration: none!important;
+    }
+
+    .intro {
+        font-weight: 600;
+        font-size: 1.1em;
+        color: rgb(150, 150, 150);
+    }
+
+    #art {
+        background-image: url("images/art.png");
+        background-size: cover;
+    }
+
+    #code {
+        background-image: url("images/bathroom-VR.PNG");
+        background-size: cover;
+    }
+
+    #info {
+        background-image: url("images/pastlives-thumb.jpg");
+        background-size: cover;
+    }
+
+    /* project display styles*/
     .box {
         position: relative;
-        width: 100%;
+        width: 90%;
+        left: 5%;
         overflow: hidden;
         height: 200px;
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .box img {
-        position: absolute;
-        top: -10%;
-        left: -20%;
-        width: 140%;
-        opacity: 1;
-        transition-duration: 1s;
-    }
-
-    .box img:hover {
+    .box:hover {
+        transition-duration: 0.5s;
         opacity: .4;
     }
 
-    #moveup {
-        top: -60%;
+    .col-space {
+        padding: 20px;
     }
 
-    .small {
-        width: 15px;
+    .col-space h3 {
+        position: relative;
+        left: 5%;
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: rgb(100, 100, 100);
+        font-weight: 800;
+        transition-duration: 0.25s;
     }
 
-    h3 {
-        margin-top: 15px;
-        font-size: 0.8em;
-        color: rgb(75, 75, 75);
+    a h3:hover {
+        color: #DEA19C;
+        text-decoration: none!important;
     }
 
-    .fade {
-        opacity: .3!important;
+    #down-arrow {
+        width: 100%;
+        left: 0%;
+        z-index: 1;
     }
 
-    h4 {
-        color: black;
-        font-size: 1.7em;
-        position: absolute;
-        top: 40%;
-        left: 30%;
+    .project-display {
+        background-color: #E6F3FF;
+        width: 100%;
+
+        padding: 5%;
+        padding-top: 10px;
+        position: relative;
     }
 
-    #utopia {
-        width: 120%;
-        top: -60px;
-        left: -40px;
+    .remel {
+        background-image: url("images/remel.png");
+        background-size: cover;
     }
 
-    #cboxLoadedContent {
-        border: 5px solid #000;
-        background: #000!important;
+    .snow-gum {
+        background-image: url("images/snow-gum.png");
+        background-size: cover;
+    }
+
+    .color-control {
+        background-image: url("images/cooking-mama.png");
+        background-size: cover;
+    }
+
+    .doodle-date {
+        background-image: url("images/doodle-date.png");
+        background-size: cover;
+    }
+
+    .bot-a-razzi {
+        background-image: url("images/bathroom-VR.png");
+        background-size: cover;
+    }
+
+    .lightbot {
+        background-image: url("images/botcode.png");
+        background-size: cover;
     }
     </style>
-    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
     <div class="container">
-        <div class="row justify-content-start">
-            <div class="col-xs-8">
-                <img src="images/logo.gif" id="logo" />
-            </div>
-            <div class="col-xs-4">
-                <ul class="sidelist">
-                    <li><a href="https://github.com/khanniie/"><img class="small" src="images/github.png" alt="logo"/> github</a></li>
-                    <li><a href="mailto:constany@andrew.cmu.edu"><img class="small" src="images/email.png" alt="logo"/> constany@andrew.cmu.edu</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCngcWj8ILwE4J9pip55zcPw"><img class="small" src="images/youtube.png" alt="logo"/> youtube</a></li>
-                    <li><a href="https://www.instagram.com/meimeithemorkie/"><img class="small" src="images/dog.png" alt="logo"/> my dog's instagram</a></li>
-                </ul>
-            </div>
-        </div>
         <div class="row">
             <div class="col-sm-12">
-                <a href="code.html">CODE</a> | <a href="art.html">ART</a> | <a href="about.html">ABOUT</a> | Hello World! I'm an undergraduate at Carnegie Mellon, pursuing a Bachelor's of Computer Science and Art.
-            </div>
-        </div>
-        <br>
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <a href="art/pastlives3.jpg" class="portfolio-work">
-                    <div class="box"><img id="moveup" src="art/pastlives-thumb.jpg"></div>
-                    <h3>tfw you see a dog <i>(2017, Acrylic/Plexiglass)</i></h3></a>
-            </div>
-            <div class="col-md-4">
-                <a href="http://connieye.com/Doodle-Date/">
-                    <div class="box"><img src="images/doodle-date.png"></div>
-                    <h3>Doodle Date <i>(2016, Javascript)</i></h3></a>
-            </div>
-            <div class="col-md-4">
-                <a href="http://connieye.com/Snow-Gum/temp.html">
-                    <div class="box"><img src="images/snow-gum.png"></div>
-                    <h3>HackCMU: Snow Gum <i>(2017, Javascript, Team)</i></h3></a>
+                <h1 class="pixelated text-center">Constance Ye</h1>
+                <p class="bold text-center">• <a href="code.html"> Github </a> • <a href="art.html"> Email </a> • <a href="about.html"> Resume </a> • </p>
+                <p class="text-center intro">Computer Science + Art Major at Carnegie Mellon.</p>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <a href="https://devpost.com/software/color-controlled-vr-controller">
-                    <div class="box"><img src="images/cooking-mama.png"></div>
-                    <h3>BostonHacks: Color Controlled VR <i>(2017, Javascript)</i></h3></a>
+                <a href="art/index.html"><img class="intro-pic" src="images/art-illustration.png"></a>
             </div>
             <div class="col-md-4">
-                <a href="https://connieye.com/good-vibes-only/">
-                    <div class="box"><img src="images/utopia.png" id="utopia"></div>
-                    <h3>a world where you're always happy <i>(2017, Javascript)</i></h3></a>
+                <a href="code/index.html"><img class="intro-pic" src="images/programming-illustration.png"></a>
             </div>
             <div class="col-md-4">
-                <a href="http://connieye.com/kale-kaleidoscope/">
-                    <div class="box"><img src="images/kaleidoscope.png"></div>
-                    <h3>Interactive Kaleidoscope <i>(2016, Javascript, p5.js)</i></h3></a>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <a href="art/homecoming.jpg" class="portfolio-work">
-                    <div class="box"><img src="art/homecoming-thumb.jpg"></div>
-                    <h3>homecoming <i>(2016, Acrylic)</i></h3></a>
-            </div>
-            <div class="col-md-4">
-                <a href="art/fan-bing-bing.jpg" class="portfolio-work">
-                    <div class="box"><img src="art/fan-bing-bing-thumb.jpg"></div>
-                    <h3>Fan Bing Bing <i>(2016, Oil Paint)</i></h3></a>
-            </div>
-            <div class="col-md-4">
-                <a href="http://connieye.com/robot-code-bob-the-builder-version/">
-                    <div class="box"><img src="images/botcode.png"></div>
-                    <h3>Lightbot+Scratch <i>(2017, Javascript)</i></h3></a>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <a href="code.html">
-                    <div class="box"><img class="fade" src="images/sort.png"></div>
-                    <h4><i>more code</i></h3></a>
-            </div>
-            <div class="col-md-4">
-                <a href="art.html"><div class="box"><img class="fade" src="art/sketchbook-mermaid-thumb.jpg"></div>
-                <h4><i>more art</i></h3></a>
-            </div>
-            <div class="col-md-4">
-                <a href="about.html"><div class="box"><img class="fade" src="art/dog-portrait-thumb.jpg"></div>
-                <h4><i>about me</i></h3></a>
+                <a href="about.html"><img class="intro-pic" src="images/about-illustration.png"></a>
             </div>
         </div>
     </div>
-    <!-- /.container -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12"><img id="down-arrow" src="images/gradient.png"></div>
+        </div>
+        <div class="project-display">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-space">
+                    <a href="http://connieye.com/Doodle-Date/">
+                        <div class="box bot-a-razzi"></div>
+                        <h3>Doodle Date <i>(2016)</i></h3></a>
+                </div>
+                <div class="col-md-4 col-space">
+                    <a href="https://remel.itch.io/remel">
+                        <div class="box remel"></div>
+                        <h3>Remel - Game Creation Society <i>(2017)</i></h3></a>
+                </div>
+                <div class="col-md-4 col-space">
+                    <a href="http://connieye.com/Snow-Gum/temp.html">
+                        <div class="box snow-gum"></div>
+                        <h3>HackCMU: Snow Gum <i>(2017)</i></h3></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-space">
+                    <a href="https://devpost.com/software/color-controlled-vr-controller">
+                        <div class="box color-control"></div>
+                        <h3>ColorControl VR - BostonHacks <i>(2017)</i></h3></a>
+                </div>
+                <div class="col-md-4 col-space">
+                    <a href="http://connieye.com/Doodle-Date/">
+                        <div class="box doodle-date"></div>
+                        <h3>Doodle Date <i>(2016)</i></h3></a>
+                </div>
+                <div class="col-md-4 col-space">
+                    <a href="http://connieye.com/robot-code-bob-the-builder-version/">
+                        <div class="box lightbot"></div>
+                        <h3>Lightbot+Scratch <i>(2017)</i></h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
