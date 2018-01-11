@@ -24,21 +24,36 @@
     });
     </script>
     <style>
-        .row ul li a{
+        .row .col-sm-8 a{
             font-weight: 800;
             color: #6e9bc4;
             text-decoration: none!important;
         }
-         h4 {
+    h4 {
         font-weight: 800;
         color: #DEA19C;
+        font-size: 2em;
         text-decoration: none!important;
     }
-    .row li {
+    .row .col-sm-8{
         font-size: 1.3em;
     }
-    .smallerimg{
-        width: 40%;
+    .col-sm-4{
+        height: auto;
+    }
+    img{
+        width: 100%;
+    }
+    iframe{
+        padding: 10px;
+        max-width: 95%;
+        display: block;
+    }
+    #content .row{
+        padding-bottom: 10px;
+    }
+    .padded{
+        height: 60px;
     }
     </style>
 </head>
@@ -94,7 +109,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1 class="pixelated text-center"><a href="https://connieye.com">Constance Ye</a></h1>
-                    <p class="bold text-center">• <a href="https://github.com/khanniie"> Github </a> • <a href="mailto:constany@andrew.cmu.edu"> Email </a> • <a href="https://www.dropbox.com/s/ghfv3ruwh5h8nfh/Constance_Ye_Resume.pdf?dl=0"> Resume </a> • </p>
+                    <p class="bold text-center">• <a href="https://github.com/khanniie"> Github </a> • <a href="mailto:constany@andrew.cmu.edu"> Email </a> • <a href="https://www.dropbox.com/s/pv48kgmsr4ng5ew/Constance_Ye_Resume.pdf?dl=0"> Resume </a> • </p>
                     <div class="line"></div>
                 </div>
             </div>
@@ -104,70 +119,98 @@
                     <div class="line "></div>
                 </div>
             </div>
-            <div class="row ">
             <h4>#LARGER INDEPENDENT PROJECTS</h4>
-            <ul>
-                <li><a href="https://connieye.com/good-vibes-only/"><b> 2017 A World Where You're Always Happy:  </b></a>project for my concept studio art class! Uses clmtracker for facial feature tracking / modiciation.</li>
-                <br>
-                <li><a href="https://khanniie.github.io/robot-code-bob-the-builder-version/ "><b> 2017   -   Lightbot + Scratch:  </b></a>Web application that allows students in AP Computer Science Principles to test out their block code in preparation for AP test questions about a robot on a grid. Users drag and drop blocks (move, rotate, repeat loop, if/else, can-move) and watch their block code play out on a grid of modifiable size with custom obstacle locations.</li>
-                <br>
-                <li><a href="https://khanniie.github.io/Doodle-Date/ "><b> 2016   -   Doodle Date:  </b></a>Online multiuser drawing tool. Users can create or join rooms and draw with their friends on the same canvas. Pen and eraser have custom size, opacity and width options. Doodle date also includes: color wheel, download, import image reference, layers.</li>
-            </ul>
-        </div>
-        <br>
-        <div class="row ">
+            <div class="row ">
+                <div class="col-sm-4"><img src="../images/utopia.png"></div><div class="col-sm-8"><a href="https://connieye.com/good-vibes-only/"><b> 2017 - A World Where You're Always Happy:  </b></a>A project for my concept studio art class! Uses clmtracker API for facial feature tracking / modiciation.</div>
+            </div>
+            <div class="row padded"></div>
+            <div class="row ">
+                <div class="col-sm-4"><img src="../images/botcode.png"></div><div class="col-sm-8"><a href="https://khanniie.github.io/robot-code-bob-the-builder-version/"><b> 2017   -   Lightbot + Scratch:  </b></a>Web application that allows students in AP Computer Science Principles to test out their block code in preparation for AP test questions about a robot on a grid. Users drag and drop blocks (move, rotate, repeat loop, if/else, can-move) and watch their block code play out on a grid of modifiable size with custom obstacle locations.</div>
+            </div>
+            <div class="row padded"></div>
+            <div class="row ">
+                <div class="col-sm-4"><img src="../images/doodle-date.png"></div><div class="col-sm-8"><a href="https://khanniie.github.io/Doodle-Date/"><b> 2016   -   Doodle Date:  </b></a>Online multiuser drawing tool. Users can create or join rooms and draw with their friends on the same canvas. Pen and eraser have custom size, opacity and width options. Doodle date also includes: color wheel, download, import image reference, layers.</div>
+                <div class="col-sm-12" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/uwB84EoyScA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+        <div class="line"></div>
             <h4>#COLLABORATIVE WORK</h4>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=R-ySfk5PLh8"><b> 2017 BOT A RAZZI:  </b></a>Final concept studio project; worked in a team of 4. Floating robots follow the user around in this VR experience built for the Google Cardboard using Aframe.js. The robot "view" info is sent to a differnt screen that projects a fake instagram profile with the video stream. I worked on the projections, sending and retriving the data using Firebase. I also 3d modeled some of the models included and built the fake social media pages and their fake chat streams.</li>
-                <li><a href="https://remel.itch.io/remel"><b> 2017 REMEL:</b></a> Part of Game Creation Society Club. Game won first at the showcase! I programmed and animated the 4th enemy, the Blob.</li>
-                <br>
-                <li><a href="http://tinyurl.com/p5js-webdev "><b> 2017 WEB DEV WEEKEND P5.js TALK:  </b></a>Rain and I gave a talk about p5.js! You can find the slides linked :)</li>
-                <br>
-                <li><a href="https://devpost.com/software/color-controlled-vr-controller "><b> 2017 BostonHacks team project - Color Controlled VR:  </b></a>We wanted to recreate Cooking Mama in virtual reality but without the use of controllers that make VR more inaccessible. Our "controller " is a colored paper on the back of the user's hand, which is tracked by the library tracking.js! You can try it yourself, but I've linked the devpost which includes a video and a link to the actual live demo.</li>
-                <br>
-                <li><a href="https://khanniie.github.io/Snow-Gum/temp.html "><b> 2017 HACKCMU team project - Snow Gum:  </b></a>Cute game to teach children ages 4 - 6 Spanish colors through voice recognition! Thank you Cece and Alyssa!</li>
-            </ul>
-        </div>
+            <div class="row ">
+                <div class="col-sm-4"><img src="../images/bathroom-VR.PNG"></div><div class="col-sm-8"><a href="https://www.youtube.com/watch?v=R-ySfk5PLh8"><b> 2017 BOT A RAZZI:  </b></a>Final concept studio project; worked in a team of 4. Floating robots follow the user around in this VR experience built for the Google Cardboard using Aframe.js. The robot "view" info is sent to a differnt screen that projects a fake instagram profile with the video stream. I worked on the projections, sending and retriving the data using Firebase. I also 3d modeled some of the models included and built the fake social media pages and their fake chat streams.</div>
+                <div class="col-sm-12" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/R-ySfk5PLh8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+            <div class="row padded"></div>
+            <div class="row ">
+                <div class="col-sm-4"><img src="https://media.giphy.com/media/26vaIsyqUgwHWMwbm/giphy.gif"></div><div class="col-sm-8"><a href="http://tinyurl.com/p5js-webdev"><b> 2017 WEB DEV WEEKEND P5.js TALK:  </b></a>Rain and I gave a talk about p5.js! You can find the slides linked :)</div>
+            </div>
+            <div class="row padded"></div>
+            <div class="row ">
+                <div class="col-sm-4"><img src="../images/cooking-mama.png"></div><div class="col-sm-8"><a href="https://devpost.com/software/color-controlled-vr-controller"><b> 2017 BostonHacks team project - Color Controlled VR:  </b></a>We wanted to recreate Cooking Mama in virtual reality but without the use of controllers that make VR more inaccessible. Our "controller " is a colored paper on the back of the user's hand, which is tracked by the library tracking.js! You can try it yourself, but I've linked the devpost which includes a video and a link to the actual live demo.</div>
+                <div class="col-sm-12" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/pBTL1YlgVyM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+            <div class="row padded"></div>
+            <div class="row ">
+                <div class="col-sm-4"><img src="../images/snow-gum.png"></div><div class="col-sm-8"><a href="https://khanniie.github.io/Snow-Gum/temp.html"><b> 2017 HACKCMU team project - Snow Gum:  </b></a>Cute game to teach children ages 4 - 6 Spanish colors through voice recognition! Thank you Cece and Alyssa!</div>
+                <div class="col-sm-12" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/IPbMT5is4Jg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
         <br>
-        <div class="row ">
+        <div class="line"></div>
             <h4>#DATA VISUALIZATION</h4>
-            <ul>
-                <li><img class="smallerimg" src="../images/magazine-word-freq.png">
-                    <br>
-                <img class="smallerimg" src="../images/smiling-visual.png">
-                    <br>
-                <img class="smallerimg" src="../images/age-ranges-w-people.png">
-                <br>
-            December 2017 - Data Visualization of Magazines using Processing</li>
-                <li><a href="https://jsfiddle.net/ozsLtxhb/66/ "><b> November 2017 - Selection Sort</b></a><br>
-                    <img src="https://media.giphy.com/media/xUNd9NWkeaYHU3Z9wk/giphy.gif " width="200px "></li>
-            </ul>
-        </div>
-        <br>
+            <div class="row">
+                <div class="col-sm-12"><img src="../images/magazine-word-freq.png"></div></div>
+            <div class="row">
+                <div class="col-sm-4"><img src="../images/smiling-visual.png"></div>
+                <div class="col-sm-4"><img src="../images/age-ranges-w-people.png"></div>
+                <div class="col-sm-4">December 2017 - Data Visualization of Magazines using Processing</div>
+            </div>
+            <div class="row padded"></div>
+            <div class="row">
+                <div class="col-sm-4"><img src="https://media.giphy.com/media/xUNd9NWkeaYHU3Z9wk/giphy.gif " width="200px"></div>
+                <div class="col-sm-8"><a href="https://jsfiddle.net/ozsLtxhb/66/ "><b> November 2017 - Selection Sort</b></a></div>
+            </div>
+        <div class="line"></div>
         <div class="row ">
             <h4>#JS SKETCHES</h4>
-            <ul>   
-                <li><a href="https://connieye.com/BXA/naturalhistory/ "><b> November 2017 - BXA Seminar Project A Natural History of This Thing (I like this one!! :) )</b></li>
-                <li><a href="https://connieye.com/BXA/ "><b> October 2017 - BXA Seminar Project Experiential Scavenger Hunt </b></a></li>
-                <li><a href="https://jsfiddle.net/ozsLtxhb/65/ ">11/04/17- Guy Fieri/ Subra Sticker jsfiddle</a></li>
-                <li><a href="https://khanniie.github.io/Q-o-METER/ ">04/07/17- Q-o-METER - compare flickr tag popularity</a></li>
-                <li><a href="https://khanniie.github.io/kale-kaleidoscope/ ">01/17/17 - Kaleidoscope!!! (refresh page for the automatic button to work) *p5.js</a></li>
-                <li><a href="https://khanniie.github.io/poker-porcupine/index.html ">12/7/16- Poker Porcupine (WORK IN PROGESS!)</a></li>
-                <li><a href="p5/spin-ball/index.html ">11/1/16 - Accidentally Hypnotic Ball *p5.js</a></li>
-                <li><a href="p5/beat-ball/index.html ">11/1/16 - Breathing Beating Ball *p5.js</a></li>
-                <li><a href="https://khanniie.github.io/maze/index.html ">10/5/16 - Maze Generator *p5.js</a></li>
-                <li><a href="p5/mood_shift_canvas/index.html ">09/30/16 - Mood Shift Canvas (my first p5 program!) *p5.js</a></li>
-                <li><a href="ozzy/ozzy.html ">07/16- Avoiding Dogs</a></li>
-                <li><a href="dog_run/input_output.html ">07/16- Running Dog</a></li>
-            </ul>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/bxa-2.png"></div><div class="col-sm-8"><a href="https://connieye.com/BXA/naturalhistory/ "><b> November 2017 - BXA Seminar Project A Natural History of This Thing</b></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/bxa-1.png"></div><div class="col-sm-8"><a href="https://connieye.com/BXA/ "><b> October 2017 - BXA Seminar Project Experiential Scavenger Hunt </b></a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/guy.png"></div><div class="col-sm-8"><a href="https://jsfiddle.net/ozsLtxhb/65/ ">11/04/17- Guy Fieri/ Subra Sticker jsfiddle</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/qometer.png"></div><div class="col-sm-8"><a href="https://khanniie.github.io/Q-o-METER/ ">04/07/17- Q-o-METER - compare flickr tag popularity</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/kaleidoscope.png"></div><div class="col-sm-8"><a href="https://khanniie.github.io/kale-kaleidoscope/ ">01/17/17 - Kaleidoscope!!! (refresh page for the automatic button to work) *p5.js</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/poker.png"></div><div class="col-sm-8"><a href="https://khanniie.github.io/poker-porcupine/index.html ">12/7/16- Poker Porcupine (WORK IN PROGESS!)</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/kale.png"></div><div class="col-sm-8"><a href="https://jsfiddle.net/miyehn/ozsLtxhb/35/">11/1/16 - Accidentally Hypnotic Ball *p5.js</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/beat.png"></div><div class="col-sm-8"><a href="p5/beat-ball/index.html ">11/1/16 - Breathing Beating Ball *p5.js</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/maze.png"></div><div class="col-sm-8"><a href="https://khanniie.github.io/maze/index.html ">10/5/16 - Maze Generator *p5.js</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/feeling.png"></div><div class="col-sm-8"><a href="p5/mood_shift_canvas/index.html ">09/30/16 - Mood Shift Canvas (my first p5 program!) *p5.js</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/doggo.png"></div><div class="col-sm-8"><a href="ozzy/ozzy.html ">07/16- Avoiding Dogs</a></div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4"><img src="../images/dogrun.png"></div><div class="col-sm-8"><a href="dog_run/input_output.html ">07/16- Running Dog</a></div>
         </div>
         <br>
+        <div class="line"></div>
+        <h4>#JAVA</h4>
         <div class="row ">
-            <h4>#JAVA</h4> 
-                <ul><li>9/5/16 - GUI Color Mixer - has checkboxes so the user can choose the color, then repaints with a background made of the chosen color and variations of them.
-            <br><img width="20% " src="java/colorMixer-Demo-1.png "><img width="20% " src="java/colorMixer-Demo-2.png "><img width="20% " src="java/colorMixer-Demo-3.png "></li></ul>
-            <br>
-        </div>
+            <div class="col-sm-4"><img src="java/colorMixer-Demo-1.png"></div><div class="col-sm-8">9/5/16 - GUI Color Mixer - has checkboxes so the user can choose the color, then repaints with a background made of the chosen color and variations of them.</div>
         </div>
     </div>
 </body>
