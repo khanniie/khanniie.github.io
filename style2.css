@@ -223,3 +223,17 @@ ul ul a {
     height: calc(100% - 10px);
     z-index: -1;
 }
+
+
+    .wrapper {
+        animation: fadein 1s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
