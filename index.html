@@ -16,11 +16,9 @@
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Arima+Madurai|Crimson+Text|Homemade+Apple|Inconsolata|Open+Sans|PT+Mono|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300|Halant:300|Neuton:200|Titillium+Web:300" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
     <style>
-    /*bootstrap grid modifications*/
 
+    /*bootstrap grid modifications*/
     body {
         font-family: 'Exo 2', sans-serif;
         margin-top: 50px;
@@ -38,8 +36,8 @@
     .col-md-4 {
         padding: 35px;
     }
-    /*intro styles*/
 
+    /*intro styles*/
     .intro-pic {
         width: 100%;
     }
@@ -79,16 +77,14 @@
         background-image: url("images/pastlives-thumb.jpg");
         background-size: cover;
     }
-    /* project display styles*/
 
+    /* project display styles*/
     .box {
         position: relative;
         width: 90%;
         left: 5%;
         overflow: hidden;
         height: 200px;
-        display: block;
-        background-size: cover;
     }
 
     .box:hover {
@@ -124,100 +120,107 @@
     .project-display {
         background-color: #E6F3FF;
         width: 100%;
+
         padding: 5%;
         padding-top: 10px;
         position: relative;
     }
 
-/*    fadein animation found @ https://stackoverflow.com/questions/19962465/fading-in-page-on-load*/
-    .wrapper {
-        animation: fadein 2s;
+    .remel {
+        background-image: url("images/remel.png");
+        background-size: cover;
     }
 
-    @keyframes fadein {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+    .snow-gum {
+        background-image: url("images/snow-gum.png");
+        background-size: cover;
+    }
+
+    .color-control {
+        background-image: url("images/cooking-mama.png");
+        background-size: cover;
+    }
+
+    .botarazzi {
+        background-image: url("images/bathroom-VR.PNG");
+        background-size: cover;
+    }
+
+    .doodle {
+        background-image: url("images/doodle-date.png");
+        background-size: cover;
+    }
+
+    .lightbot {
+        background-image: url("images/botcode.png");
+        background-size: cover;
     }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="pixelated text-center">Constance Ye</h1>
-                    <p class="bold text-center">• <a href="https://github.com/khanniie"> Github </a> • <a href="mailto:constany@andrew.cmu.edu"> Email </a> • <a href="https://www.dropbox.com/s/6rchyx5h9jcpj23/Constance_Ye_Resume.pdf?dl=0"> Resume </a> • </p>
-                    <p class="text-center intro">Computer Science + Art Major at Carnegie Mellon.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <a href="art/index.html"><img class="intro-pic" src="images/art-illustration.png"></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="code/index.html"><img class="intro-pic" src="images/programming-illustration.png"></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="about.html"><img class="intro-pic" src="images/about-illustration.png"></a>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="pixelated text-center">Constance Ye</h1>
+                <p class="bold text-center">• <a href="https://github.com/khanniie"> Github </a> • <a href="mailto:constany@andrew.cmu.edu"> Email </a> • <a href="https://www.dropbox.com/s/6rchyx5h9jcpj23/Constance_Ye_Resume.pdf?dl=0"> Resume </a> • </p>
+                <p class="text-center intro">Computer Science + Art Major at Carnegie Mellon.</p>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12"><img id="down-arrow" src="images/gradient.png"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a href="art/index.html"><img class="intro-pic" src="images/art-illustration.png"></a>
             </div>
-            <div class="project-display">
-                <div class="row justify-content-center">
-                    <div class="col-md-4 col-space">
-                        <a href="http://connieye.com/Doodle-Date/">
-                            <div class="box lazy doodle" data-src="images/doodle-date.png"></div>
-                            <h3>Doodle Date <i>(2016)</i></h3></a>
-                    </div>
-                    <div class="col-md-4 col-space">
-                        <a href="https://remel.itch.io/remel">
-                            <div class="box lazy remel" data-src="images/remel.png"></div>
-                            <h3>Remel - Game Creation Society <i>(2017)</i></h3></a>
-                    </div>
-                    <div class="col-md-4 col-space">
-                        <a href="http://connieye.com/Snow-Gum/temp.html">
-                            <div class="box lazy snow-gum" data-src="images/snow-gum.png"></div>
-                            <h3>HackCMU: Snow Gum <i>(2017)</i></h3></a>
-                    </div>
+            <div class="col-md-4">
+                <a href="code/index.html"><img class="intro-pic" src="images/programming-illustration.png"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="about.html"><img class="intro-pic" src="images/about-illustration.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12"><img id="down-arrow" src="images/gradient.png"></div>
+        </div>
+        <div class="project-display">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-space">
+                    <a href="http://connieye.com/Doodle-Date/">
+                        <div class="box doodle"></div>
+                        <h3>Doodle Date <i>(2016)</i></h3></a>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-4 col-space">
-                        <a href="https://devpost.com/software/color-controlled-vr-controller">
-                            <div class="box lazy color-control" data-src="images/cooking-mama.png"></div>
-                            <h3>ColorControl VR - BostonHacks <i>(2017)</i></h3></a>
-                    </div>
-                    <div class="col-md-4 col-space">
-                        <a href="https://www.youtube.com/watch?v=R-ySfk5PLh8&feature=youtu.be">
-                            <div class="box lazy botarazzi" data-src="images/bathroom-VR.PNG"></div>
-                            <h3>Bot A Razzi<i>(2017)</i></h3></a>
-                    </div>
-                    <div class="col-md-4 col-space">
-                        <a href="http://connieye.com/robot-code-bob-the-builder-version/">
-                            <div class="box lazy lightbot" data-src="images/botcode.png"></div>
-                            <h3>Lightbot+Scratch <i>(2017)</i></h3></a>
-                    </div>
+                <div class="col-md-4 col-space">
+                    <a href="https://remel.itch.io/remel">
+                        <div class="box remel"></div>
+                        <h3>Remel - Game Creation Society <i>(2017)</i></h3></a>
+                </div>
+                <div class="col-md-4 col-space">
+                    <a href="http://connieye.com/Snow-Gum/temp.html">
+                        <div class="box snow-gum"></div>
+                        <h3>HackCMU: Snow Gum <i>(2017)</i></h3></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-space">
+                    <a href="https://devpost.com/software/color-controlled-vr-controller">
+                        <div class="box color-control"></div>
+                        <h3>ColorControl VR - BostonHacks <i>(2017)</i></h3></a>
+                </div>
+                <div class="col-md-4 col-space">
+                    <a href="https://www.youtube.com/watch?v=R-ySfk5PLh8&feature=youtu.be">
+                        <div class="box botarazzi"></div>
+                        <h3>Bot A Razzi<i>(2017)</i></h3></a>
+                </div>
+                <div class="col-md-4 col-space">
+                    <a href="http://connieye.com/robot-code-bob-the-builder-version/">
+                        <div class="box lightbot"></div>
+                        <h3>Lightbot+Scratch <i>(2017)</i></h3></a>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-    $(function() {
-        $('.lazy').lazy({
-            effect: "fadeIn",
-            effectTime: 500,
-            threshold: 0
-        });
-    });
-    </script>
+    </div>
 </body>
 
 </html>
