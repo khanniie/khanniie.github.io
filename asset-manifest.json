@@ -1,12 +1,12 @@
 {
-  "main.css": "static/css/main.25c41bd3.css",
-  "main.css.map": "static/css/main.25c41bd3.css.map",
-  "main.js": "static/js/main.99702eef.js",
-  "main.js.map": "static/js/main.99702eef.js.map",
-  "static/media/close.png": "static/media/close.8969dc9b.png",
-  "static/media/grey_github.png": "static/media/grey_github.cde5b366.png",
-  "static/media/me.png": "static/media/me.b625f9f7.png",
-  "static/media/pancake.png": "static/media/pancake.fef67d92.png",
-  "static/media/wordart.png": "static/media/wordart.6a9b800e.png",
-  "static/media/wordart3.png": "static/media/wordart3.a12424b5.png"
+  "main.css": "static/css/main.9a61ff04.css",
+  "main.css.map": "static/css/main.9a61ff04.css.map",
+  "main.js": "static/js/main.ee538f62.js",
+  "main.js.map": "static/js/main.ee538f62.js.map",
+  "pdfjsWorker.js": "static/js/pdfjsWorker.4a480da8.chunk.js",
+  "pdfjsWorker.js.map": "static/js/pdfjsWorker.4a480da8.chunk.js.map",
+  "static/media/me.jpeg": "static/media/me.4394d623.jpeg",
+  "static/media/resume.pdf": "static/media/resume.94702e38.pdf",
+  "static/media/wordart.png": "static/media/wordart.663b7878.png",
+  "static/media/wordart3.png": "static/media/wordart3.6f1473a1.png"
 }
