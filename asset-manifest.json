@@ -1,10 +1,12 @@
 {
   "main.css": "static/css/main.5fafcb48.css",
   "main.css.map": "static/css/main.5fafcb48.css.map",
-  "main.js": "static/js/main.363d6d07.js",
-  "main.js.map": "static/js/main.363d6d07.js.map",
-  "pdfjsWorker.js": "static/js/pdfjsWorker.6823ef9e.chunk.js",
-  "pdfjsWorker.js.map": "static/js/pdfjsWorker.6823ef9e.chunk.js.map",
+  "main.js": "static/js/main.19c1e1ea.js",
+  "main.js.map": "static/js/main.19c1e1ea.js.map",
+  "pdfjsWorker.js": "static/js/pdfjsWorker.4a480da8.chunk.js",
+  "pdfjsWorker.js.map": "static/js/pdfjsWorker.4a480da8.chunk.js.map",
   "static/media/me.jpg": "static/media/me.52800d2e.jpg",
-  "static/media/resume.pdf": "static/media/resume.eb1f5089.pdf"
+  "static/media/resume.pdf": "static/media/resume.eb1f5089.pdf",
+  "static/media/wordart.png": "static/media/wordart.663b7878.png",
+  "static/media/wordart3.png": "static/media/wordart3.6f1473a1.png"
 }
